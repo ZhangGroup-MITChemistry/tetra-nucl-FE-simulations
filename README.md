@@ -1,5 +1,5 @@
 # tetra-nucl-FE-simulations
-Repository used for sharing scripts used in calculating free energy profiles for our collaborative work with the Poirer Group. (bioRxiv 2025.08.13.670082; doi: https://doi.org/10.1101/2025.08.13.670082)
+Repository used for sharing scripts used in calculating free energy profiles for our collaborative work with the Poirier Group. (bioRxiv 2025.08.13.670082; doi: https://doi.org/10.1101/2025.08.13.670082)
 
 # Details
 ./build_system -- Contains script (build_nonrigid_system.py) to prepare system files for simulation, including the CV restraints we used for umbrella sampling. 
