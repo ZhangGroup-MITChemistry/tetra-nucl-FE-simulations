@@ -14,10 +14,11 @@ except ImportError:
     import simtk.unit as unit
 from openabc.forcefields.rigid import createRigidBodies
 from openabc.utils.helper_functions import write_pdb, parse_pdb
-check_point_file = "/home/gridsan/iriveros/projects/cg_DNA/free_energy_chromatin_collab/tetra-nucl-stretch/simulations/10bp_restraint_simulations_rerun/sim_e2e-center_67.2500_d13-d24-center_-7.2708/sim_output/checkpoint.chk"
+#check_point_file = "/home/gridsan/iriveros/projects/cg_DNA/free_energy_chromatin_collab/tetra-nucl-stretch/simulations/10bp_restraint_simulations_rerun/sim_e2e-center_67.2500_d13-d24-center_-7.2708/sim_output/checkpoint.chk"
 #check_point_file = "/home/gridsan/iriveros/projects/cg_DNA/free_energy_chromatin_collab/tetra-nucl-stretch/simulations/10bp_restraint_simulations/sim_e2e-center_38.2500_d13-d24-center_14.5625/sim_output/checkpoint.chk"
+check_point_file = sys.argv[1]
 
-build_dir = '../build_system'
+build_dir = '../../../build_system'
 nonrigid_system_xml = f'{build_dir}/nonrigid_system.xml'
 
 pdb = f'{build_dir}/cg_tetra_nucl.pdb'
